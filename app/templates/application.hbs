@@ -1,7 +1,52 @@
-{{page-title "EmberConf"}}
-
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+{{page-title 'EmberConf'}}
+<nav aria-label="Main Navigation">
+  <ul>
+    <li>
+      <a href="http://www.google.com">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="http://www.google.com">
+        Blog
+      </a>
+    </li>
+    <li class="has-submenu" {{hover}}>
+      <a
+        href="http://www.google.com"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Services
+      </a>
+      <ul>
+        <li>
+          <a href="http://www.google.com">
+            Octane Migration
+          </a>
+        </li>
+        <li>
+          <a href="http://www.google.com">
+            Staff Augmentation
+          </a>
+        </li>
+        <li>
+          <a href="http://www.google.com">
+            Team Training
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="http://www.google.com">
+        Case Study
+      </a>
+    </li>
+    <li>
+      <a href="http://www.google.com">
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>
 {{outlet}}

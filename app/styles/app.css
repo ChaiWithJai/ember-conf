@@ -1,0 +1,8 @@
+
+
+nav > ul {display: flex; justify-content: space-evenly; list-style-type:none; background-color: green;}
+ul > li {flex-basis: 20%}
+a {color: #fff; text-decoration: none; border: 1px solid green;}
+
+nav > ul li.has-submenu ul { display: none; }
+nav > ul li.has-submenu.open ul { display: block;}
